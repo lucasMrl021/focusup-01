@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "FocusUp",
+    "slug": "focusup",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F2F6F5"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "br.com.focusup"
+    },
+    "android": {
+      "package": "br.com.focusup",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A6B6B"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "O FocusUp usa suas fotos para a imagem do perfil.",
+          "cameraPermission": "O FocusUp usa a câmera para tirar a foto do perfil."
+        }
+      ]
+    ]
+  }
+}

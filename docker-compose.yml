@@ -1,0 +1,18 @@
+# Sobe o MySQL usado pela API: docker compose up -d
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: focusup-mysql
+    environment:
+      MYSQL_DATABASE: focusup
+      MYSQL_USER: focusup
+      MYSQL_PASSWORD: focusup
+      MYSQL_ROOT_PASSWORD: focusup-root
+      TZ: America/Sao_Paulo
+    ports:
+      - "3306:3306"
+    volumes:
+      - focusup-dados:/var/lib/mysql
+
+volumes:
+  focusup-dados:
